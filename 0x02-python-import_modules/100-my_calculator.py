@@ -9,5 +9,13 @@ if __name__ == "__main__":
         b = int(sys.argv[3])
         op = sys.argv[2]
         if op == "+":
-            print("{} + {} = {}".format(a, b, add(a, b))0
-                    elif op == "":
+            print("{} + {} = {}".format(a, b, add(a, b)))
+        elif op == "-":
+            print("{} - {} = {}".format(a, b, sub(a, b)))
+        elif op == "*":
+            print("{} * {} = {}".format(a, b, mul(a, b)))
+        elif op == "/":
+            print("{} / {} = {}".format(a, b, div(a, b)))
+                    else:
+                    print("Unknown operator. Available operators: +, -, * and /")
+                    exit(1)
